@@ -4,7 +4,7 @@ import axios from 'axios';
 const ChaiAi = () => {
     let form = document.querySelector("form")
     const chatContainer = document.getElementById('chatcontainer')
-    const [prompt, setPrompt] = useState('Hello nice to meet you')
+    const [prompt, setPrompt] = useState('')
     
     var text 
     const [past_user_inputs, setPastUserInputs] = useState([])
