@@ -1,9 +1,4 @@
-import {
-  yolo,
-  framermotion,
-  tailwind,
-  hug
-} from "../assets";
+
 
 export const navLinks = [
   {
@@ -22,27 +17,4 @@ export const navLinks = [
   
 ];
 
-const services = [
-  {
-    title: "Yolo",
-    icon: yolo,
-  },
-  {
-    title: "Tailwind",
-    icon: tailwind,
-  },
-  {
-    title: "Framer Motion",
-    icon: framermotion,
-  },
-  {
-    title: "Hugging Face",
-    icon: hug,
-  },
-];
 
-
-
-
-
-export { services };
