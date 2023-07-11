@@ -5,14 +5,12 @@ from waitress import serve
 from PIL import Image
 import json 
 import requests
+import os
 
-
-
-# FOOD_API_URL = "https://api-inference.huggingface.co/models/Kaludi/food-category-classification-v2.0"
-# headers_food = {"Authorization": f"Bearer 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"}
+vite_chat_api = os.environ.get("VITE_CHAT_API")
 
 CHAT_API_URL = "https://api-inference.huggingface.co/models/facebook/blenderbot-400M-distill"
-headers_chat = {"Authorization": "Bearer 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"}
+headers_chat = {"Authorization": f"Bearer {vite_chat_api}"}
 
 app = Flask(__name__)
 CORS(app)
@@ -48,13 +46,6 @@ def detect_objects_on_image(buf):
           x1, y1, x2, y2, result.names[class_id], prob
         ])
     return output
-
-# @app.route("/food", methods=["POST"])
-# def food():
-#     data = request.files["fileFood"]
-#     response = requests.post(FOOD_API_URL, headers=headers_food, data=data)
-#     print(response.json())
-#     return response.json()
 
 
 @app.route('/chatai', methods=["POST"])
