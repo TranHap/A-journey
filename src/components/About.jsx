@@ -14,10 +14,7 @@ return (
         variants={fadeIn("","", 0.1, 1)}
         className="mt-2 text-secondary text-[17px] max-3-xl leading-[30px]"
       >
-         A-journey được tạo ra với mục đích cho người dùng trải nghiệm một số ứng dụng từ trí tuệ nhân tạo, 
-         từ đó giúp mọi người hiểu rõ thêm về lĩnh vực này. Khi nói về trí tuệ nhân tạo, thứ mọi người 
-         thường tưởngg tượng đến là những cổ máy dạng người biết đi. Thế nhưng AI vẫn luônn hiện hữu
-         trong cuộc sống thường ngày của chúng ta.
+        Hello
 
       </motion.p>
       
