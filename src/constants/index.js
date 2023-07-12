@@ -7,7 +7,7 @@ export const navLinks = [
   },
   {
     id: "/object_detection",
-    title: "App"
+    title: "Ob-detect"
   },
   {
     id: "chatai",

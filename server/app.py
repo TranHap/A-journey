@@ -5,12 +5,9 @@ from waitress import serve
 from PIL import Image
 import json 
 import requests
-import os
-
-vite_chat_api = os.environ.get("VITE_CHAT_API")
 
 CHAT_API_URL = "https://api-inference.huggingface.co/models/facebook/blenderbot-400M-distill"
-headers_chat = {"Authorization": f"Bearer {vite_chat_api}"}
+headers_chat = {"Authorization": "Bearer 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"}
 
 app = Flask(__name__)
 CORS(app)

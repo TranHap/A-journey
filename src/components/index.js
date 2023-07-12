@@ -4,7 +4,6 @@ import ChatAi from './ChatAi';
 import Navbar from './Navbar';
 import About from './About';
 import ObjectDetection from './ObjectDetection';
-import Process from './Process';
 import Intro from './Intro';
 
 export {
@@ -13,6 +12,5 @@ export {
   ChatAi,
   Navbar,
   ObjectDetection,
-  Process,
   Intro,
 }
